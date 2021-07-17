@@ -31,7 +31,7 @@ class RssController {
 
     try {
       res.type('application/xml');
-      res.send(xml(xmlFeed))
+      res.send(xmlFeed)
     } catch (error) {
       next(error);
     }

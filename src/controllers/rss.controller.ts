@@ -30,6 +30,7 @@ class RssController {
     var xmlFeed = feed.xml();
 
     try {
+      res.type('application/xml');
       res.send(xml(xmlFeed))
     } catch (error) {
       next(error);

@@ -21,22 +21,22 @@ describe('Testing Auth', () => {
     });
   });
 
-  describe('[POST] /login', () => {
-    it('response should have the Set-Cookie header with the Authorization token', async () => {
-      const userData: CreateUserDto = {
-        email: 'test@email.com',
-        password: 'q1w2e3r4',
-      };
+  // describe('[POST] /login', () => {
+  //   it('response should have the Set-Cookie header with the Authorization token', async () => {
+  //     const userData: CreateUserDto = {
+  //       email: 'test@email.com',
+  //       password: 'q1w2e3r4',
+  //     };
 
-      const authRoute = new AuthRoute();
-      const app = new App([authRoute]);
+  //     const authRoute = new AuthRoute();
+  //     const app = new App([authRoute]);
 
-      return request(app.getServer())
-        .post('/login')
-        .send(userData)
-        .expect('Set-Cookie', /^Authorization=.+/);
-    });
-  });
+  //     return request(app.getServer())
+  //       .post('/login')
+  //       .send(userData)
+  //       .expect('Set-Cookie', /^Authorization=.+/);
+  //   });
+  // });
 
   // error: StatusCode : 404, Message : Authentication token missing
   // describe('[POST] /logout', () => {

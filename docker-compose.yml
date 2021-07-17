@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  jasperdog:
+  thestoryboard-rss:
     image: jackson147/storyboard-rss:latest
     networks:
      - web

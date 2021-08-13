@@ -24,7 +24,7 @@ class RssController {
         url: 'https://minio.newlinkedlist.com/thestoryboard/01.mp3', // link to the item
         categories: ['Creative','Media', 'North East', 'UK', 'Video games'],
         date: 'July 16 2021', // any format that js Date can parse.
-        enclosure: {url:'https://minio.newlinkedlist.com/', file:'thestoryboard/01.mp3'}
+        enclosure: {url:'https://minio.newlinkedlist.com/thestoryboard/01.mp3', type: "audio/mpeg"}
     });
      
     // cache the xml to send to clients

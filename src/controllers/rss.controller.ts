@@ -29,7 +29,7 @@ class RssController {
         feed.item({
           title:  'Paul Greveson',
           description: 'In this episode we chat with Paul Greveson about his role as a Lead Technical Artist at Embark Studios. Listen on to find out more about what it\'s like to work in the gaming industry.',
-          url: `https://minio.newlinkedlist.com/thestoryboard/${content.Key}`, // link to the item
+          url: `https://www.facebook.com/thestoryboardhub/`, // link to the item
           categories: ['Creative','Media', 'North East', 'UK', 'Video games'],
           date: 'July 16 2021', // any format that js Date can parse.
           enclosure: {url: `https://minio.newlinkedlist.com/thestoryboard/${content.Key}`, size: content.Size, type: "audio/mpeg"}

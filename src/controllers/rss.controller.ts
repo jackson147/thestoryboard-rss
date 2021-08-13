@@ -6,7 +6,7 @@ class RssController {
   public index = (req: Request, res: Response, next: NextFunction): void => {
     let feed = new RSS({
         title: "Creative Cast",
-        feed_url: "https://thestoryboardrss.newlinkedlist.com",
+        feed_url: "https://thestoryboardrss.newlinkedlist.com/rss",
         site_url: "https://thestoryboard.newlinkedlist.com",
         image_url: 'http://example.com/icon.png',
         managingEditor: 'Jen Clark-Hall',

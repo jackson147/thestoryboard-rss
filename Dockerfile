@@ -3,6 +3,8 @@ FROM node:14.14.0-alpine3.12 as common-build-stage
 
 RUN apk add --update alpine-sdk
 
+COPY . ./app
+
 WORKDIR /app
 
 RUN npm install

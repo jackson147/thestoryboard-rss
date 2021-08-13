@@ -1,7 +1,7 @@
 # Common build stage
 FROM node:14.14.0-alpine3.12 as common-build-stage
 
-COPY . ./app
+RUN apk add --update alpine-sdk
 
 WORKDIR /app
 

@@ -9,7 +9,7 @@ class RssController {
     let feed = new RSS({
         title: "Creative Cast",
         feed_url: "https://thestoryboardrss.newlinkedlist.com/rss",
-        site_url: "https://thestoryboard.newlinkedlist.com",
+        site_url: "https://www.facebook.com/thestoryboardhub/",
         image_url: 'http://example.com/icon.png',
         managingEditor: 'Jen Clark-Hall',
         webMaster: 'Richard Jackson ',

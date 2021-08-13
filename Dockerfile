@@ -1,7 +1,7 @@
 # Common build stage
 FROM node:14.14.0-alpine3.12 as common-build-stage
 
-RUN apk add --update alpine-sdk
+RUN apk add --update python3 && apk add --update alpine-sdk
 
 COPY . ./app
 

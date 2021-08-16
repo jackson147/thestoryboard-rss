@@ -21,6 +21,9 @@ class RssController {
         categories: ['Creative','Media', 'North East', 'UK'],
         pubDate: 'July 1, 2021 00:00:00 GMT',
         ttl: 60,
+        custom_namespaces: {
+          'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+        },
         custom_elements: [
           {'itunes:subtitle': 'Interviewing creative individuals from the North East of the UK'},
           {'itunes:author': 'Jen Clark-Hall'},

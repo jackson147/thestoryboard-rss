@@ -3,6 +3,7 @@ import RSS from 'rss'
 import minioService from '@services/minio.service'
 import { ShowsService } from '@services/shows.service'
 import NodeCache from 'node-cache';
+import nodeid3 from 'node-id3'
 
 class RssController {
 
@@ -34,12 +35,11 @@ class RssController {
   };
 
   private createFeed(){
-    let icon = 'https://scontent.flba3-1.fna.fbcdn.net/v/t1.6435-9/87263194_100928184846134_6604263639308304384_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=W29kRo_zr7kAX-2JNqk&_nc_ht=scontent.flba3-1.fna&oh=a5006e87da1c788d800e4f85ae1c467d&oe=613E877F'
     let feed = new RSS({
         title: "Creative Cast",
         feed_url: "https://thestoryboardrss.newlinkedlist.com/rss",
         site_url: "https://www.facebook.com/thestoryboardhub/",
-        image_url: icon,
+        image_url: 'https://minio.newlinkedlist.com/thestoryboard-assets/storyboard.jpg',
         managingEditor: 'Jen Clark-Hall',
         webMaster: 'Richard Jackson ',
         copyright: '2021 Jen Clark-Hall',

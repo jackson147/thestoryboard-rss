@@ -54,6 +54,7 @@ class RssController {
           {'itunes:subtitle': 'Interviewing creative individuals from the North East of the UK'},
           {'itunes:author': 'Jen Clark-Hall'},
           {'itunes:summary': 'We chat with creative individuals and businesses about how they have carved a path in the creative industries. From Digital Artists and  Architects to Potters and Production Assistants... and everything in between!'},
+          {'itunes:explicit': 'clean'},
           {'itunes:owner': [
             {'itunes:name': 'Jen Clark-Hall'},
             {'itunes:email': 'jen.pen.clark@gmail.com'}
@@ -65,11 +66,11 @@ class RssController {
           }},
           {'itunes:category': [
             {_attr: {
-              text: 'Technology'
+              text: 'Business'
             }},
             {'itunes:category': {
               _attr: {
-                text: 'Gadgets'
+                text: 'Careers'
               }
             }}
           ]}
@@ -85,12 +86,15 @@ class RssController {
         title:  show.title,
         description: show.description,
         url: `https://github.com/jackson147/thestoryboard-rss/blob/main/shows/${show.notesFile}`,
-        categories: ['Creative','Media', 'North East', 'UK', 'Video games'],
-        date: show.date, // any format that js Date can parse.
+        categories: ['Creative','Media', 'North East', 'UK'],
+        date: Date.parse(show.date), // any format that js Date can parse.
         enclosure: {
           url: `${show.url}`,
           size: track.Size, type: "audio/mpeg"
-        }
+        },
+        custom_elements: [
+          {'itunes:explicit': 'no'}
+        ]
       });
     }
     return feed

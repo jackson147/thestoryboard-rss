@@ -8,5 +8,8 @@
     "cors": {
         "origin": "your.domain.com",
         "credentials": true
+    },
+    "minio" : {
+        "url": "https://minio.newlinkedlist.com/thestoryboard/"
     }
 }

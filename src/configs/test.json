@@ -8,5 +8,8 @@
     "cors": {
         "origin": true,
         "credentials": true
+    },
+    "minio" : {
+        "url": "https://minio.newlinkedlist.com/thestoryboard/"
     }
 }

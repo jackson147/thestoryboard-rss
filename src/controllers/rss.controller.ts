@@ -84,7 +84,7 @@ class RssController {
       feed.item({
         title:  show.title,
         description: show.description,
-        url: `https://github.com/jackson147/thestoryboard-rss/blob/main/src/shows/${show.notesFile}`,
+        url: `https://github.com/jackson147/thestoryboard-rss/blob/main/shows/${show.notesFile}`,
         categories: ['Creative','Media', 'North East', 'UK', 'Video games'],
         date: show.date, // any format that js Date can parse.
         enclosure: {

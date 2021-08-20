@@ -13,8 +13,6 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
-    "@types/node-cache": "^4.2.5",
-    "@types/rss": "0.0.29",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "class-transformer": "^0.4.0",
@@ -62,6 +60,8 @@
     "@types/jsonwebtoken": "^8.5.4",
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.0.1",
+    "@types/node-cache": "^4.2.5",
+    "@types/rss": "0.0.29",
     "@types/supertest": "^2.0.11",
     "@types/swagger-jsdoc": "^6.0.1",
     "@types/swagger-ui-express": "^4.1.3",

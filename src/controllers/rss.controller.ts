@@ -88,7 +88,7 @@ class RssController {
         categories: ['Creative','Media', 'North East', 'UK', 'Video games'],
         date: show.date, // any format that js Date can parse.
         enclosure: {
-          url: `https://minio.newlinkedlist.com/thestoryboard/${show.url}`,
+          url: `${show.url}`,
           size: track.Size, type: "audio/mpeg"
         }
       });

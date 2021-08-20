@@ -87,7 +87,7 @@ class RssController {
         description: show.description,
         url: `https://github.com/jackson147/thestoryboard-rss/blob/main/shows/${show.notesFile}`,
         categories: ['Creative','Media', 'North East', 'UK'],
-        date: Date.parse(show.date), // any format that js Date can parse.
+        date: Date.parse(`${show.date}Z`), // any format that js Date can parse.
         enclosure: {
           url: `${show.url}`,
           size: track.Size, type: "audio/mpeg"

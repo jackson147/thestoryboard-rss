@@ -1,5 +1,5 @@
 # Common build stage
-FROM node:14.14.0-alpine3.12 as common-build-stage
+FROM node:14.21.3-alpine3.17 as common-build-stage
 
 RUN apk add --update python3 && apk add --update alpine-sdk
 
@@ -23,4 +23,5 @@ FROM common-build-stage as production-build-stage
 
 ENV NODE_ENV production
 
-CMD ["npm", "run", "start"]
+RUN npm run build
+CMD ["npx", "cross-env", "NODE_ENV=production", "node", "dist/server.js"]
